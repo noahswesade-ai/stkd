@@ -1,0 +1,36 @@
+/*
+ * STKD brand tokens: one source for the website and the motion scenes.
+ * Placeholder values drawn from the STKD Packs doc (chrome box, dark "premium /
+ * performance" ad look, one bright accent). Swap these once the logo and the
+ * brand folder are in the repo; nothing else should hard-code a colour.
+ */
+:root {
+  --ink: #0a0a0b;          /* page black */
+  --ink-2: #141416;        /* raised surface */
+  --ink-3: #1e1e21;        /* card / line on dark */
+  --bone: #f2f1ed;         /* off-white text and light surfaces */
+  --mute: #8d8c88;         /* secondary text */
+  --volt: #d7ff3c;         /* the one accent: CTAs, counts, energy */
+  --volt-ink: #0a0a0b;     /* text on volt */
+
+  /* Chrome, for the box and highlights */
+  --chrome-hi: #fbfbfa;
+  --chrome-mid: #b9bcc2;
+  --chrome-lo: #5d6068;
+  --chrome-deep: #2a2c31;
+
+  /* Flavour colours for sachets and bars */
+  --f-cookie: #c9a27a;
+  --f-caramel: #d98b3a;
+  --f-peach: #ffb38a;
+  --f-cola: #7a2a2a;
+  --f-candy: #ff6fb5;
+  --f-melon: #ff5a5f;
+  --f-choc: #5a3523;
+  --f-vanilla: #efe2c2;
+  --f-cake: #f7a6c8;
+  --f-orange: #ff8a1f;
+
+  --font-display: "Archivo Variable", "Archivo", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}

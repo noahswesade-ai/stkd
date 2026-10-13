@@ -1,0 +1,15 @@
+{
+  "name": "stkd",
+  "scripts": {
+    "dev": "node motion/serve.mjs site 8080",
+    "render": "node motion/render.mjs",
+    "critique": "node motion/critique.mjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/archivo": "^5.2.5",
+    "@fontsource/jetbrains-mono": "^5.2.5",
+    "playwright": "^1.56.1"
+  },
+  "type": "module",
+  "private": true
+}
