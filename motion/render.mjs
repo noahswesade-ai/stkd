@@ -75,7 +75,7 @@ export async function render(opts) {
     const ff = run("ffmpeg", [
       "-y", "-f", "image2pipe", "-framerate", String(fps), "-c:v", opts.png ? "png" : "mjpeg", "-i", "-",
       ...(mute ? [] : ["-i", wav]),
-      "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-pix_fmt", "yuv420p",
+      "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-pix_fmt", "yuv420p",
       ...(mute ? ["-an"] : ["-c:a", "aac", "-b:a", "192k", "-shortest"]),
       "-movflags", "+faststart", outAbs,
     ], { stdin: true });
